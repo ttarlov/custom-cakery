@@ -1,10 +1,10 @@
 /********************************* NATIVE ELS & GENERAL STYLES *********************************/
 
 html, body {
-  color: #576574;
-  font-size: 14px;
+  color: black;
+  font-size: .9em;
   margin: 0;
-  font-family: 'Josefin Slab', serif;
+  font-family: 'Open Sans', serif;
   display: flex;
   flex-direction: column;
   align-items: space-between;
@@ -21,14 +21,13 @@ body.modal-active::after {
   bottom: 0;
 }
 
-a {
-  color: #576574;
-  text-decoration: none;
-}
+/* a {
+  color: blue;
+} */
 
-a:focus {
+/* a:focus {
   outline: none !important;
-}
+} */
 
 form {
   background-color: rgba(255, 255, 255, .7);
@@ -42,9 +41,9 @@ input[type="text"], input[type="number"], textarea {
   width: 100%;
 }
 
-input:focus {
+/* input:focus {
   outline: none!important;
-}
+} */
 
 button {
   background-color: #333333;
@@ -68,6 +67,11 @@ h4 {
   text-align: center;
 }
 
+h2 {
+  font-size: 2em;
+  padding: 0;
+}
+
 .description-text {
   max-width: 500px;
 }
@@ -79,8 +83,8 @@ h4 {
 /********************************* HEADER *********************************/
 
 .header {
-  background-color: #333333;
-  padding: 5px 25px;
+  background-color: #ffcccc;
+  /* padding: 5px 25px; */
   display: flex;
   flex-direction: column;
   margin-bottom: 65px;
@@ -90,6 +94,10 @@ h4 {
   position: absolute;
   top: 10px;
   left: 10px;
+  font-size: 5em;
+  margin-left: 10px;
+  background-color: transparent;
+  color: black;
 }
 
 .close {
@@ -97,6 +105,9 @@ h4 {
   position: absolute;
   top: 10px;
   right: 10px;
+  background: none;
+  color: black;
+  padding: 50px;
 }
 
 .close.active {
@@ -106,8 +117,8 @@ h4 {
 .menu {
   display: none;
   position: absolute;
-  height: 50%;
-  width: 50%;
+  height: 315px;
+  width: 20%;
   top: 0;
   left: 0;
   background-color: #ffcccc;
@@ -121,6 +132,7 @@ h4 {
   display: flex;
   flex-direction: column;
   padding: 25px;
+  /* border: 1px solid red; */
 }
 
 .cake-review {
@@ -239,4 +251,24 @@ h4 {
 
 .margin-top--small {
   margin-top: 15px;
+}
+
+article {
+  font-size: 1.2em;
+}
+
+.logo {
+  font-family: 'Niconne', cursive;
+  font-size: 4em;
+  color: black;
+  letter-spacing:.1em;
+}
+.page-link {
+  font-size: 2em;
+}
+
+nav {
+  width: 10%;
+  box-shadow: 0px 0px 33px 10px rgba(0,0,0,0.75);
+
 }

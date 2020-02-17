@@ -5,45 +5,52 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>The Custom Cakery</title>
     <link rel="stylesheet" href="../styles.css" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Josefin+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <link rel="icon" href="../images/favicon.png" type="image/favicon" sizes="16x16">
   </head>
   <body id="landing">
-    <div class="content">
-      <div class="header flex">
-        <i class="hamburger fas fa-bars"></i>
-        <div class="menu">
-          <div class="links">
-            <h5>MENU</h5>
-            <a href="landing.html">&bull; Home</a>
-            <a href="order.html">&bull; Order a Cake</a>
-            <a href="gallery.html">&bull; The Gallery</a>
-          </div>
-          <img class="cake-review" src="../images/cake_review.png">
-        </div>
-        <i class="close fas fa-times"></i>     
-        <a href="landing.html">
-          <h2 class="logo"><img src="../images/cake_logo.png"></h2>
-        </a>
-      </div>
+    <main class="content">
+      <header class="header flex">
+        <button aria-label="navigation menu" tabindex="1" class="hamburger fas fa-bars"></button>
+        <nav class="menu">
+          <ul class="links">
+            <h2>MENU</h2>
+            <li> <a class="page-link" aria-label="back to home page"  href="landing.html">Home</a></li>
+            <li> <a class="page-link" aria-label="order a cake" href="order.html">Order a Cake</a></li>
+            <li> <a class="page-link" aria-label="visit galery" href="gallery.html">The Gallery</a></li>
+          </ul>
+          <button class="close fas fa-times"></button>
+          <!-- <img class="cake-review" src="../images/cake_review.png"> -->
+        </nav>
+          <h1 class="logo">The Custom Cakery</h1>
+      </header>
       <div class="flex">
         <div>
           <img class="medium-image landing-image" src="../images/sprinkle_cake.jpeg">
           <div class="margin-top--small medium-image-text"><img src="../images/cake_text.png"></div>
         </div>
         <div class="description-text">
-          <div>🎂🎂🎂🎂🎂🎂🎂🎂🎂🎂🎂</div>
-          <p>
-            Welcome to The Custom Cakery! We are an entirely custom cake making business, and would love to take on any cake challenge! Our cakes are inspired by many things, including: fresh flowers, winter mountain scenes, a long walk on the beach, spending time with our friends and family, modern art galleries, heavy metal concerts, scuba diving in the carribbean, the smell of rain, our favorite novels, and of course YOU! We would love to create that custom cake of your dreams, just for fun, or for a special event and / or person in your life! These events may include: birthdays, weddings, funerals, get togethers, reunions, band practice, halloween, national chocolate cake day, births, your cat's birthday, quitting a job, apologizing to a friend or acquaintance and more!!!!!
-          </p>
-          <div>Click <a href="order.html">here</a> to order a cake today, or check out our awesome <a href="gallery.html">gallery!</a></div>
+          <article aria-label="welcome-message">
+            Welcome to The Custom Cakery! We are an entirely custom cake making business,
+            and would love to take on any cake challenge!
+            <p>Our cakes are inspired by many things,
+            including: fresh flowers, winter mountain scenes, a long walk on the beach, spending time
+             with our friends and family, modern art galleries, heavy metal concerts, scuba diving in the
+              carribbean, the smell of rain, our favorite novels, and of course YOU!</p>
+            <p>We would love to create
+              that custom cake of your dreams, just for fun, or for a special event and / or person in your life!
+              These events may include: birthdays, weddings, funerals, get togethers, reunions, band practice, halloween,
+               national chocolate cake day, births, your cat's birthday, quitting a job, apologizing to a friend or
+                acquaintance and more!!!!!</p>
+          </article>
+          <section>Click <a role='link' aria-label="order link" href="order.html">here</a> to order a cake today, or check out our awesome <a aria-label="Link to Gallery" href="gallery.html">gallery!</a></section>
           <p>WE ALSO MAKE CUPCAKES!!!</p>
-          <div>🎂🎂🎂🎂🎂🎂🎂🎂🎂🎂🎂</div>
-        </div>       
+        </div>
       </div>
-    </div>
-    <div class="footer">
+    </main>
+    <footer class="footer">
       <div>Contact Us On Social Media OR By Calling 555 - 555 - 5555</div>
       <div>
         <a href=""><i class="fab fa-instagram"></i></a>
@@ -51,7 +58,7 @@
         <a href=""><i class="fas fa-envelope-open"></i></a>
         <a href=""><i class="fab fa-twitter"></i></a>
       </div>
-    </div>
+    </footer>
     <script type="text/javascript" src="../main.js"></script>
     </body>
   </html>
